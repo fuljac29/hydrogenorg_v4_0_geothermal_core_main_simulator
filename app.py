@@ -5,6 +5,11 @@ from modules.geothermal_core import GeothermalCoreInputs, calculate, interpretat
 
 st.set_page_config(page_title="HydrogenOrg V4.0 Geothermal Core Main Simulator", page_icon="⚡", layout="wide")
 
+# NAV-02: return links available in the main view and sidebar.
+st.link_button('← Back to HydrogenOrg', 'https://hydrogenorg.ch/', type='primary', help='Opens the website in a new tab and keeps this simulation available.')
+st.caption('Navigation update · NAV-02')
+st.sidebar.link_button('← Back to HydrogenOrg', 'https://hydrogenorg.ch/', help='Opens the website in a new tab.')
+
 st.title("HydrogenOrg V4.0 — Geothermal Core Main Simulator")
 st.subheader("Primary simulator: geothermal electricity first, downstream hydrogen fuel second")
 st.info("This is the main HydrogenOrg simulator. It models geothermal electricity generation as the primary economic engine before connecting desalination, steam preparation, plasma hydrogen, gas separation and mobility fuel layers.")
